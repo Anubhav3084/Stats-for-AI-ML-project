@@ -1,0 +1,62 @@
+Training model 1/10:
+        Epoch 10/10: Train step 853/853 prob = 0.9658 model = 25903.8750 loss = 27803.1602              
+Training model 2/10:
+        Epoch 10/10: Train step 853/853 prob = 0.9997 model = 26248.7246 loss = 26265.4746              
+Training model 3/10:
+        Epoch 10/10: Train step 853/853 prob = 1.0000 model = 29193.0840 loss = 29194.9531              
+Training model 4/10:
+        Epoch 10/10: Train step 853/853 prob = 0.9548 model = 27185.4062 loss = 29712.3535              
+Training model 5/10:
+        Epoch 10/10: Train step 853/853 prob = 0.9726 model = 27968.2285 loss = 29484.9180             
+Training model 6/10:
+        Epoch 10/10: Train step 853/853 prob = 0.9929 model = 33666.3633 loss = 34054.4219              
+Training model 7/10:
+        Epoch 10/10: Train step 853/853 prob = 0.9881 model = 28772.3574 loss = 29426.5039              
+Training model 8/10:
+        Epoch 10/10: Train step 853/853 prob = 0.8835 model = 27304.6309 loss = 34063.9375              
+Training model 9/10:
+        Epoch 10/10: Train step 853/853 prob = 0.9995 model = 26468.8984 loss = 26496.4863              
+Training model 10/10:
+        Epoch 10/10: Train step 853/853 prob = 0.9847 model = 23824.8574 loss = 24663.7109              
+
+Testing against seen class:
+        Test run 50/50
+
+Class prediction analysis:
+        Mean class probabilities:
+tensor([9.2972e-04, 3.2465e-03, 1.6577e-03, 5.7416e-04, 9.5936e-01, 3.0368e-07,
+        4.2624e-03, 6.0608e-03, 4.0159e-03, 1.9896e-02])
+        Prediction standard deviation per sample:
+tensor([2.0385e-02, 3.9623e-02, 2.8078e-02, 1.8717e-02, 1.2852e-01, 4.8894e-05,
+        4.1108e-02, 5.6786e-02, 3.8932e-02, 8.8346e-02])
+        Prediction standard deviation across samples:
+tensor([1.0156e-02, 1.7646e-02, 1.4116e-02, 4.0309e-03, 1.0448e-01, 6.9116e-06,
+        3.9605e-02, 2.6707e-02, 3.2113e-02, 6.8324e-02])
+
+Testing against unseen class:
+        Test run 50/50
+
+Class prediction analysis:
+        Mean class probabilities:
+tensor([2.1731e-02, 1.1687e-02, 3.2206e-03, 4.7949e-01, 1.0420e-02, 3.9020e-06,
+        6.4888e-02, 7.2194e-03, 2.8159e-01, 1.1975e-01])
+        Prediction standard deviation per sample:
+tensor([0.0980, 0.0733, 0.0358, 0.3425, 0.0594, 0.0006, 0.1812, 0.0580, 0.2950,
+        0.2335])
+        Prediction standard deviation across samples:
+tensor([6.6201e-02, 5.1989e-02, 1.3599e-02, 2.9097e-01, 2.1760e-02, 8.4446e-05,
+        1.1014e-01, 3.4494e-02, 2.5670e-01, 1.3243e-01])
+
+Testing against pure white noise:
+        Test run 50/50
+
+Class prediction analysis:
+        Mean class probabilities:
+tensor([0.1086, 0.2580, 0.0761, 0.0543, 0.1019, 0.0012, 0.0388, 0.1111, 0.1876,
+        0.0625])
+        Prediction standard deviation per sample:
+tensor([0.1405, 0.2517, 0.1070, 0.1255, 0.0758, 0.0127, 0.0496, 0.0822, 0.1543,
+        0.0446])
+        Prediction standard deviation across samples:
+tensor([0.0131, 0.0175, 0.0086, 0.0068, 0.0108, 0.0016, 0.0056, 0.0134, 0.0134,
+        0.0061])
